@@ -1,0 +1,87 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$majestic-blue: #18243e;
+$majestic-burgandy: #7f283b;
+$majestic-beige: #a2835f;
+$majestic-magnolia: #f3ebd0;
+$majestic-ivory: #f2f1f1;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  background-color: $majestic-ivory;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+.bg-dark {
+  background-color: $majestic-blue !important;
+}
+
+.logo {
+  width: 115px;
+  height: 47px;
+  background: url(../img/logo.png) no-repeat top left;
+  background-size: 115px 47px;
+}
+
+.desktop-contact {
+  margin-top: -1rem;
+  margin-bottom: -2rem;
+  background-color: $majestic-beige;
+  .phone-number {
+    font-size: 1.65rem;
+    font-weight: 600;
+    color: $majestic-burgandy;
+  }
+  .email {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: $majestic-ivory;
+  }
+}
+
+.mobile-contact {
+  background-color: $majestic-blue;
+  .phone-number {
+    font-size: 1.25rem;
+    color: $majestic-beige;
+  }
+  .addr {
+    display: block;
+    color: $majestic-ivory;
+    font-size: 0.75em;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    .nav-link {
+      color: $majestic-ivory !important;
+    }
+    .active {
+      background-color: $majestic-beige;
+    }
+    ul {
+      margin-left: -3rem !important;
+      margin-right: -3rem !important;
+    }
+    ul:first-child {
+      margin-top: 1rem;
+      font-family: 'Playfair Display', serif;
+      border-bottom: none;
+    }
+    li {
+      padding: 0.5rem 3rem !important;
+      background-color: $majestic-burgandy;
+      border-bottom: 1px solid $majestic-beige;
+    }
+  }
+}
