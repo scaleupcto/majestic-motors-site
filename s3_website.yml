@@ -1,6 +1,6 @@
 s3_id: <%= ENV['MM_S3_ID'] %>
 s3_secret: <%= ENV['MM_S3_SECRET'] %>
-s3_bucket: staging.majesticmotors.co.uk
+s3_bucket: staging.majestic-motors.co.uk
 # cloudfront_distribution_id: <%= ENV['MM_CF_DIST_ID'] %>
 s3_endpoint: eu-west-2
 gzip: true
