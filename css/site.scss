@@ -147,12 +147,27 @@ h3 {
 
   .carousel-item {
     margin-bottom: -3rem;
-    max-height: 40rem;
+    max-height: 60rem;
   }
 
   .carousel-caption {
     bottom: unset;
     top: 5rem;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 1em;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
   }
 
   @media (max-width: 991px) {
@@ -160,10 +175,16 @@ h3 {
       top: 3rem;
     }
     h1 {
-      font-size: 2rem;
+      font-size: 1.2rem;
+    }
+    h2 {
+      font-size: 0.9rem;
+    }
+    h3 {
+      font-size: 0.8rem;
     }
     p {
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
     img {
       width: 10rem;
