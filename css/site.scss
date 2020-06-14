@@ -20,7 +20,7 @@ em {
   color: $majestic-beige;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
   font-weight: 100;
 }
@@ -276,8 +276,13 @@ footer {
   }
 }
 
-.services {
-  color: $majestic-ivory;
+.our-services, .our-projects, .our-team, .contact-us {
+  .carousel-inner {
+    height: 15em;
+  }
+}
+
+.our-projects {
   h3 {
     color: $majestic-ivory;
   }
@@ -285,107 +290,28 @@ footer {
     color: $majestic-blue;
   }
 
-  .row:nth-child(1) {
-    .col:nth-child(2) {
-      background-image: url("/img/svcs/1.jpg");
-    }
-    .col:nth-child(3) {
-      background-image: url("/img/svcs/2.jpg");
-    }
-    .col:nth-child(4) {
-      background-image: url("/img/svcs/3.jpg");
-    }
-    .col:nth-child(5) {
-      background-image: url("/img/svcs/4.jpg");
-    }
-    .col:nth-child(6) {
-      background-image: url("/img/svcs/5.jpg");
-    }
-    .col:nth-child(7) {
-      background-image: url("/img/svcs/6.jpg");
-    }
-    .col:nth-child(8) {
-      background-image: url("/img/svcs/7.jpg");
-    }
-    .col:nth-child(9) {
-      background-image: url("/img/svcs/8.jpg");
-    }
-    .col:nth-child(10) {
-      background-image: url("/img/svcs/9.jpg");
-    }
-    .col:nth-child(11) {
-      background-image: url("/img/svcs/10.jpg");
-    }
-    .col:nth-child(12) {
-      background-image: url("/img/svcs/11.jpg");
-    }
-    .col:nth-child(13) {
-      background-image: url("/img/svcs/12.jpg");
-    }
-    .col:nth-child(14) {
-      background-image: url("/img/svcs/13.jpg");
-    }
+  .featured a, .featured a:hover {
+    color: $majestic-ivory;
+    text-decoration: none;
   }
-
-  .col {
-    height: 16rem;
-    padding: 0;
-    background-color: $majestic-beige;
-    border-bottom: 1px solid $majestic-ivory;
-    border-left: 1px solid $majestic-ivory;
-    background-size: cover;
-    //background-repeat: no-repeat;
-    .cover:before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(0,0,100, 0.5);
-      -moz-transition: background .3s linear;
-      -webkit-transition: background .3s linear;
-      -o-transition: background .3s linear;
-      transition: background .3s linear;
-    }
-    .cover:hover:before {
-      background: none;
-    }
-
-    .description {
-      padding: 3rem;
-      background-color: $majestic-beige;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
-      width: 100%;
-      opacity: 0;
-      transition: .5s ease;
-    }
-  }
-  .col:hover .description {
-    opacity: 1;
-  }
-
-  .col:first-child {
-    border-left: none;
-  }
-
-  .row:first-child {
-    .col:first-child {
-      background-color: $majestic-burgandy;
-      .description {
-        background-color: $majestic-burgandy;
-        opacity: 1;
+  .card-img-overlay {
+    .card-title {
+      width: 66%;
+      text-align: left;
+      background: rgba(0, 0, 0, 0.75);
+      h6 {
+        color: $majestic-beige;
       }
     }
   }
+}
 
-  @media (hover: hover) { }
+.our-services {
+  a {
+    img {
+      border: 1px solid $majestic-burgandy;
+    }
+  }
 }
 
 .project {
