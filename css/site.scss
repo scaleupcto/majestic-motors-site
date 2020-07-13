@@ -15,6 +15,7 @@ body {
   background-color: $majestic-ivory;
 }
 
+
 em {
   font-style: normal;
   color: $majestic-beige;
@@ -278,7 +279,9 @@ footer {
 
 .our-services, .our-projects, .our-team, .contact-us {
   .carousel-inner {
-    height: 15em;
+    height: 20em;
+    align-items: flex-end;
+    display: flex;
   }
 }
 
@@ -318,4 +321,8 @@ footer {
   .carousel-item {
     height: 20em;
   }
+}
+
+.contact-details {
+  font-size: 1.4em;
 }

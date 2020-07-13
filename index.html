@@ -4,19 +4,37 @@ layout: site
 
 <main class="home">
 
-  <div id="homepageCarousel" class="carousel slide" data-pause="false" data-ride="carousel" data-interval="5000">
-    <ol class="carousel-indicators container d-none d-lg-flex">
+  <div id="homepageCarousel" class="carousel slide carousel-fade" data-pause="false" data-ride="carousel" data-interval="5000">
+    <ol class="carousel-indicators container d-none xd-lg-flex">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div class="carousel-item active" data-interval="3500">
         <div style="z-index: -1">
-          <img class="d-none d-md-block w-100" src="img/mexico/banner.png" alt="Picture of Ford Escort Mexico Mk1">
-          <img class="d-block d-md-none w-100" src="img/mexico/banner-xs.png" alt="Picture of Ford Escort Mexico Mk1">
+          <img class="d-none d-md-block w-100" src="img/mexico/banner.jpg" alt="Picture of Ford Escort Mexico Mk1">
+          <img class="d-block d-md-none w-100" src="img/mexico/banner-xs.jpg" alt="Picture of Ford Escort Mexico Mk1">
         </div>
+        <div class="carousel-caption w-25 d-none d-md-block text-left">
+          <h3>Featured project:</h3>
+          <h1>Ford Escort Mexico</h1>
+          <h2>Earls Court Motorshow Car</h2>
+          <p class="d-none d-md-block">Full bare metal restoration, one of four bubble arched AVO cars</p>
+          <a href="/projects/mexico"><span class="sr-only">Find out more</span><img src="/img/find-out-more.png"></a>
+        </div>
+        <div class="carousel-caption w-50 d-block d-md-none text-left">
+          <h3>Featured project:</h3>
+          <h1>Ford Escort Mexico</h1>
+          <h2>Earls Court Motorshow Car</h2>
+          <a href="/projects/mexico"><span class="sr-only">Find out more</span><img src="/img/find-out-more.png"></a>
+        </div>
+      </div>
+      <div class="carousel-item" data-interval="3500">
+        <img class="d-none d-md-block w-100" src="img/mexico/banner-3.jpg" alt="Picture of Ford Escort Mexico Mk1">
+        <img class="d-block d-md-none w-100" src="img/mexico/banner-3-xs.jpg" alt="Picture of Ford Escort Mexico Mk1">
         <div class="carousel-caption w-25 d-none d-md-block text-left">
           <h3>Featured project:</h3>
           <h1>Ford Escort Mexico</h1>
@@ -95,17 +113,13 @@ layout: site
 
 
   <div class="container">
-    <div class="jumbotron business-description text-center jumbotron-fluid">
+    <div class="jumbotron business-description text-center jumbotron-fluid" style="z-index: 9000">
       <h2><em>Classic car</em> &amp; <em>motorbike restoration</em>, modification and customisation</h2>
       <p class="lead">Based near Birmingham, Coventry, Warwick, Oxford, Leamington Spa, Banbury and the Cotswolds</p>
       <p class="mt-3 text-justify">We specialise in classic cars & motorbikes and offer <a href="/services.html">a range of services</a> to preserve, restore or enhance your pride & joy.  We can also help with kit cars, race preparation and design/manufacturing of replacement parts & components.</p>
       <p class="mt-3 text-justify">What makes Majestic Motors unique is that we refuse to cut corners but instead take the time to find the root cause of the fault and fix the problem properly. Our engineering background gives us a solid foundation and logical professional approach, combined with the ability to think around the problem, outside the box.</p>
       <p class="mt-3 text-justify">Attention to detail is paramount and we pride ourselves in ensuring the job is done right. </p>
     </div>
-  </div>
-
-  <div class="services">
-    <div class="row"></div>
   </div>
 
  <div class="services d-none">
@@ -232,24 +246,9 @@ layout: site
            <a href="/services/"><span class="sr-only">Read more</span><img src="/img/read-more-white-down.png"></a>
          </div>
        </div>
-       <div class="col col-12 col-md-6 col-lg-3">
-         <div class="cover">
-         </div>
-       </div>
      </div>
    </div>
  </div>
 
-  <!-- ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul -->
 
 </main>
