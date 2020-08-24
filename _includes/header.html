@@ -14,4 +14,20 @@
 
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins:200,400" rel="stylesheet">
 
-<title>Classic car & motorbike restoration, modification and customisation | Majestic Motors</title>
+<title>{% if page.title %} {{ page.title }} | {% endif %}Classic car & motorbike restoration, modification and customisation | Majestic Motors</title>
+
+
+<meta property="og:url"                content="{{site.url}}{{page.url}}" />
+<meta property="og:type"               content="website" />
+{% if page.title %}
+<meta property="og:title"              content="Majestic Motors {{ page.title }}" />
+{% else %}
+<meta property="og:title"              content="Majestic Motors: Classic car & motorbike restoration, modification and customisation" />
+{% endif %}
+{% if page.description %}
+<meta property="og:description"        content="{{ page.description }}" />
+{% endif %}
+{% if page.image %}
+<meta property="og:image"              content="{{site.url}}{{ page.image }}" />
+{% endif %}
+<meta property="fb:app_id" content="336070697437025"/>
