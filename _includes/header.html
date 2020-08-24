@@ -31,3 +31,41 @@
 <meta property="og:image"              content="{{site.url}}{{ page.image }}" />
 {% endif %}
 <meta property="fb:app_id" content="336070697437025"/>
+
+<script type='application/ld+json'>
+    {
+        "@context": "http://www.schema.org",
+        "@type": "AutomotiveBusiness",
+        "name": "Majestic Motors",
+        "url": "{{ site.url }}",
+        "logo": "{{ site.url }}/img/logo_bw.jpg",
+        "image": "{{ site.url }}/img/mexico/finished.jpg",
+        "description": "Classic car and motorbike specialists, based near Birmingham, Coventry, Warwick, Oxford, Leamington Spa, Banbury and the Cotswolds",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Table Oak Farm, Table Oak Lane",
+            "addressLocality": "Kenilworth",
+            "addressRegion": "Warwickshire",
+            "postalCode": "CV8 1PX",
+            "addressCountry": "United Kingdom"
+        },
+        "telephone": "+441926658923",
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "52.366901",
+            "longitude": "-1.651638"
+        },
+        "hasMap": "https://g.page/MajesticMotorsLtd",
+        "openingHours": "Mo 08:30-17:30 Tu 08:30-17:30 We 08:30-17:30 Th 08:30-17:30 Fr 08:30-12:30",
+        "email": "info@majestic-motors.co.uk",
+        "areaServed": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "52.366901",
+                "longitude": "-1.651638"
+            },
+            "geoRadius": 100000
+        },
+    }
+</script>
