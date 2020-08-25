@@ -1,2 +1,2 @@
 url: "https://staging.majestic-motors.co.uk" # the base hostname & protocol for your site
-robots_disallow: *
+robots_disallow: "*"

@@ -24,3 +24,4 @@ gem "minima"
 # end
 
 gem 'jekyll-sitemap'
+gem 'jekyll-compress-images'

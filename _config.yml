@@ -27,3 +27,7 @@ exclude:
   - deploy
 plugins:
   - jekyll-sitemap
+  - jekyll-compress-images
+
+compress_images:
+  images_path: "img/**/*.{gif,png,jpg,jpeg,svg}"
