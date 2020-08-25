@@ -18,6 +18,7 @@ email: info@majestic-motors.co.uk
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.majestic-motors.co.uk" # the base hostname & protocol for your site
 github_username:  robotrobot
+robots_disallow:
 
 # Build settings
 markdown: kramdown
