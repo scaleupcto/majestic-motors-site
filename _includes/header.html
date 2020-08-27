@@ -66,6 +66,18 @@
                 "longitude": "-1.651638"
             },
             "geoRadius": 100000
-        },
+        }
     }
 </script>
+
+{% if jekyll.environment == "production" %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120024208-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-120024208-1');
+</script>
+{% endif %}
