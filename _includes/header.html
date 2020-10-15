@@ -39,7 +39,7 @@
         "name": "Majestic Motors",
         "url": "{{ site.url }}",
         "logo": "{{ site.url }}/img/logo_bw.jpg",
-        "image": "{{ site.url }}/img/mexico/finished.jpg",
+        "image": "{{ site.url }}{%if page.image %}{{ page.image }}{% else %}/img/mexico/finished.jpg{% endif %}",
         "description": "Classic car and motorbike specialists, based near Birmingham, Coventry, Warwick, Oxford, Leamington Spa, Banbury and the Cotswolds",
         "address": {
             "@type": "PostalAddress",
