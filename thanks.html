@@ -25,3 +25,8 @@ permalink: /thanks/
     </div>
 
 </main>
+{% if jekyll.environment == "production" %}
+<script>
+    fbq('track', 'Lead');
+</script>
+{% endif %}
