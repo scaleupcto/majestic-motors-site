@@ -33,13 +33,51 @@
 <meta property="fb:app_id" content="336070697437025"/>
 
 <script type='application/ld+json'>
+    {% if page.url == "/jobs/classic-car-technician/" %}
+    {
+        "@context" : "https://schema.org/",
+        "@type" : "JobPosting",
+        "title" : "Classic Car Technician (Mid-level or Senior",
+        "description" : "Due to growth in the business we are looking for skilled technicians at either a mid or senior level to join our team on the mechanical side of the workshop.",
+        "datePosted" : "2021-09-16",
+        "validThrough" : "2021-12-31T00:00",
+        "employmentType" : "FULL_TIME",
+        "hiringOrganization" : {
+            "@type" : "Organization",
+            "name" : "Majestic Motors",
+            "sameAs" : "{{ site.url }}",
+            "logo" : "{{ site.url }}/img/logo_bw.jpg"
+        },
+        "jobLocation": {
+            "@type": "Place",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Table Oak Farm, Table Oak Lane",
+                "addressLocality": "Kenilworth",
+                "addressRegion": "Warwickshire",
+                "postalCode": "CV8 1PX",
+                "addressCountry": "United Kingdom"
+            }
+        },
+        "baseSalary": {
+            "@type": "MonetaryAmount",
+            "currency": "GBP",
+            "value": {
+                "@type": "QuantitativeValue",
+                "minValue": 25000,
+                "maxValue": 35000,
+                "unitText": "YEAR"
+            }
+        }
+    }
+    {% else %}
     {
         "@context": "http://www.schema.org",
         "@type": "AutomotiveBusiness",
         "name": "Majestic Motors",
         "url": "{{ site.url }}",
         "logo": "{{ site.url }}/img/logo_bw.jpg",
-        "image": "{{ site.url }}{%if page.image %}{{ page.image }}{% else %}/img/mexico/finished.jpg{% endif %}",
+        "image": "{d{ site.url }}{%if page.image %}{{ page.image }}{% else %}/img/mexico/finished.jpg{% endif %}",
         "description": "Classic car and motorbike specialists, based near Birmingham, Coventry, Warwick, Oxford, Leamington Spa, Banbury and the Cotswolds",
         "address": {
             "@type": "PostalAddress",
@@ -68,6 +106,7 @@
             "geoRadius": 100000
         }
     }
+    {% endif %}
 </script>
 
 {% if jekyll.environment == "production" %}
