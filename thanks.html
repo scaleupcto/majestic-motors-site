@@ -1,6 +1,6 @@
 ---
 layout: site
-title: The team
+title: Thanks for your email!
 permalink: /thanks/
 ---
 
@@ -25,3 +25,8 @@ permalink: /thanks/
     </div>
 
 </main>
+{% if jekyll.environment == "production" %}
+<script>
+    fbq('track', 'Lead');
+</script>
+{% endif %}
